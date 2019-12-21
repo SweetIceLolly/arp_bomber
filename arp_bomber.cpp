@@ -155,8 +155,8 @@ int main(int argc, char *argv[]) {
         printf("Input your router IP address (e.g. 192.168.168.1): ");
         scanf("%i.%i.%i.%i", &temp_data[0], &temp_data[1],
                              &temp_data[2], &temp_data[3]);
-        for (int i = 0; i < 6; i++) {
-            router_mac[i] = temp_data[i];
+        for (int i = 0; i < 4; i++) {
+            router_ip[i] = temp_data[i];
         }
     }
     printf("OK. Your router IP address is: %i.%i.%i.%i\n",

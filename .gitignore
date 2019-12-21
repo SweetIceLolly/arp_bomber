@@ -1,0 +1,5 @@
+# ignore .vscode
+.vscode/
+
+# ignore the executable file
+arp_bomber
