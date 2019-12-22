@@ -159,9 +159,8 @@ public:
     Return:     -1: Failed to receive data;
     .           Other value: The length of received data
     */
-    int recv(unsigned char *buffer, int buffer_size, mac_addr source_mac_addr) {
+    int recv(unsigned char *buffer, int buffer_size) {
         memset(buffer, 0, buffer_size);
-        memcpy(&socket_address.sll_addr, &source_mac_addr, 6);
         return recvfrom(socket_descr, buffer, buffer_size, 0, NULL, NULL);
     }
 
